@@ -32,7 +32,7 @@ public class DAOFactory {
 		try {
 			System.out.println(db_url);
 			Class.forName(DRIVER_CLASSNAME);
-			connector = DriverManager.getConnection(db_url, db_user, db_password);
+			connector = DriverManager.getConnection(db_url, postgres, lala);
 			System.out.println("Fetching data from " + db_url + ", user " + db_user);
 		} catch (SQLException ex) {
 			System.out.println("Error SQL while creating database connection");
